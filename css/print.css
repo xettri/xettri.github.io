@@ -1,0 +1,63 @@
+/* Common print styles to handle browser defaults */
+  @page {
+    size: A4;
+    /* Setting margin to 0 hides the default browser header and footer when printing */
+    margin: 0;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+  }
+
+  body {
+    margin: 0 1.5cm;
+    background: white !important;
+  }
+
+  .page-wrap {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Prevent page breaks right after headings and section numbers */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .section-number,
+  .def-label,
+  .env-head {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  /* Prevent page breaks inside paragraphs and important structural blocks */
+  p,
+  li,
+  .toc,
+  .math-block,
+  .figure,
+  table,
+  pre,
+  blockquote {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Prevent solitary lines (widows/orphans) at top or bottom of pages */
+  p,
+  li,
+  .section {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .page-break {
+    break-before: page;
+  }
+  
+  .paper-link-page {
+    display: none;
+  }
+}
