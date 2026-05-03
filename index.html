@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bharat Rawat — Independent Researcher</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Code+Pro:wght@400;500&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --paper: #faf8f4;
+  --ink: #1a1814;
+  --ink-light: #4a4640;
+  --ink-muted: #7a7670;
+  --accent: #2c4a7c;
+  --rule: #d0ccc4;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 100px 30px;
+}
+
+header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-family: 'Crimson Pro', serif;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: var(--ink-light);
+  margin-bottom: 24px;
+}
+
+.bio {
+  font-size: 1.1rem;
+  color: var(--ink-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 50px 0;
+}
+
+.section-title {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--ink-muted);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.project-list {
+  list-style: none;
+}
+
+.project-item {
+  margin-bottom: 40px;
+}
+
+.project-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.project-desc {
+  font-size: 1.1rem;
+  color: var(--ink-light);
+  margin-bottom: 16px;
+}
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.link-item a {
+  font-family: 'Crimson Pro', serif;
+  font-size: 1.2rem;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 2px;
+  transition: all 0.2s ease;
+}
+
+.link-item a:hover {
+  border-bottom-color: var(--accent);
+  color: #1a3258;
+}
+
+.footer {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+}
+</style>
+</head>
+<body>
+
+<div class="page-wrap">
+  <header>
+    <h1>Bharat Rawat</h1>
+    <div class="subtitle">Independent Researcher · India</div>
+    <p class="bio">Working on Artificial General Intelligence (AGI) and human-like intelligence in AI.</p>
+  </header>
+
+  <hr>
+
+  <div class="section-title">Research</div>
+
+  <ul class="project-list">
+    <li class="project-item">
+      <h2 class="project-title">Distributed Autonomous Neuron Theory</h2>
+      <p class="project-desc">An alternative computational framework arising from first-principles reasoning, modeling the neuron as an autonomous agent in a decentralized network.</p>
+      
+      <div class="link-list">
+        <div class="link-item">
+          <a href="research/dan/index.html">Theoretical Framework &rarr;</a>
+        </div>
+        <div class="link-item">
+          <a href="research/dan/theorems.html">Mathematical Foundations &amp; Proofs &rarr;</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <div class="footer">
+    &copy; 2026 Bharat Rawat. All rights reserved.
+  </div>
+</div>
+
+</body>
+</html>
